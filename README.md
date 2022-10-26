@@ -6,4 +6,7 @@ Curso Alura - Projeto em Xamarin
 
 ### Alterações Feitas
 ### (v01.00)
-> * Inicialização do Projeto
+> * Inicialização do Projeto;
+
+### (v01.01)
+> * Utilzação do StackLayout para exibir alguns itens (carros);
