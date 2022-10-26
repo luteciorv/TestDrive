@@ -19,3 +19,6 @@ Curso Alura - Projeto em Xamarin
 
 ### (v01.04)
 > * Componente Span e formatação de texto;
+
+### (v01.05)
+> * Utilização do Stacklayout com horientação horizontal para exibir os dados;
