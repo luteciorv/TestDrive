@@ -13,3 +13,6 @@ Curso Alura - Projeto em Xamarin
 
 ### (v01.02)
 > * Utilzação da Grid para exibir os carros e seus respectivos preços;
+
+### (v01.03)
+> * Utilzação do ListView para exibir os itens dinamicamente pelo CodeBehind;
