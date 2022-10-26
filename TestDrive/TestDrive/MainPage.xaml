@@ -8,7 +8,17 @@
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.View>
-                        <Label Text="{Binding Nome}"/>
+                        <Label>
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <FormattedString.Spans>
+                                        <Span Text="{Binding Nome}"></Span>
+                                        <Span Text=" - "></Span>
+                                        <Span Text="{Binding Preco}" FontAttributes="Bold"></Span>
+                                    </FormattedString.Spans>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
                     </ViewCell.View>
                 </ViewCell>
             </DataTemplate>

@@ -16,3 +16,6 @@ Curso Alura - Projeto em Xamarin
 
 ### (v01.03)
 > * Utilzação do ListView para exibir os itens dinamicamente pelo CodeBehind;
+
+### (v01.04)
+> * Componente Span e formatação de texto;
