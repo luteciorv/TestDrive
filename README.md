@@ -22,3 +22,7 @@ Curso Alura - Projeto em Xamarin
 
 ### (v01.05)
 > * Utilização do Stacklayout com horientação horizontal para exibir os dados;
+
+### (v01.06)
+> * Evento de Click adicionado na Lista (ItemTapped);
+> * Exibição de uma mensagem através do Alert;

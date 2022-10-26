@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestDrive.MainPage">
 
-    <ListView x:Name="lvVeiculos" ItemsSource="{Binding Veiculos}">
+    <ListView x:Name="lvVeiculos" ItemsSource="{Binding Veiculos}" Margin="25"
+        ItemTapped="OnSelecionarVeiculo">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
@@ -11,7 +12,7 @@
                         <StackLayout Orientation="Horizontal">
                             <Label Text="{Binding Nome}" FontSize="16" VerticalTextAlignment="Center"></Label>
                             <Label Text=" - " VerticalTextAlignment="Center"></Label>
-                            <Label Text="{Binding Preco}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
+                            <Label Text="{Binding PrecoFormatado}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
                         </StackLayout>
                     </ViewCell.View>
                 </ViewCell>

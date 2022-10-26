@@ -29,11 +29,19 @@ namespace TestDrive
 
             BindingContext = this;
         }
+
+        private void OnSelecionarVeiculo(object sender, ItemTappedEventArgs e)
+        {
+            var veiculoSelecionado = (Veiculo) e.Item;
+
+            DisplayAlert("Test Drive", $"Você selecionou o veículo {veiculoSelecionado.Nome} que custa {veiculoSelecionado.PrecoFormatado}", "Ok");
+        }
     }
 
     public class Veiculo
     {
         public string Nome { get; set; }
         public decimal Preco { get; set; }
+        public string PrecoFormatado { get { return $"R$ {Preco:#,##0.00}"; } }
     }
 }
