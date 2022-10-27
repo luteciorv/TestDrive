@@ -26,3 +26,8 @@ Curso Alura - Projeto em Xamarin
 ### (v01.06)
 > * Evento de Click adicionado na Lista (ItemTapped);
 > * Exibição de uma mensagem através do Alert;
+
+### (v01.07)
+> * Navegação entre páginas;
+> * Criação das páginas Detalhes e Agendamento;
+> * Adição de título na página;

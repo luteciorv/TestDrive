@@ -6,12 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace TestDrive
+namespace TestDrive.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class ListagemView : ContentPage
     {
         public List<Veiculo> Veiculos { get; set; }
-        public MainPage()
+        public ListagemView()
         {            
             InitializeComponent();
 
@@ -30,11 +30,12 @@ namespace TestDrive
             BindingContext = this;
         }
 
-        private void OnSelecionarVeiculo(object sender, ItemTappedEventArgs e)
+        private async void OnSelecionarVeiculo(object sender, ItemTappedEventArgs e)
         {
             var veiculoSelecionado = (Veiculo) e.Item;
 
-            DisplayAlert("Test Drive", $"Você selecionou o veículo {veiculoSelecionado.Nome} que custa {veiculoSelecionado.PrecoFormatado}", "Ok");
+            var paginaDetalhesView = new DetalhesView(veiculoSelecionado);
+            await Navigation.PushAsync(paginaDetalhesView);
         }
     }
 
