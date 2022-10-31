@@ -2,7 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestDrive.Views.DetalhesView">
-    
-    <Button x:Name="btnProximo" Text="Próximo" Clicked="OnSelecionarProximo"
-            VerticalOptions="EndAndExpand"></Button>
+
+    <StackLayout Padding="25">
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="Acessórios">
+                    <SwitchCell x:Name="swtFreio" On="True" OnChanged="OnSelecionarAjuste"></SwitchCell>
+                    <SwitchCell x:Name="swArCondicionado" OnChanged="OnSelecionarAjuste"></SwitchCell>
+                    <SwitchCell x:Name="swMP3" OnChanged="OnSelecionarAjuste"></SwitchCell>
+
+                    <TextCell x:Name="txtValorTotal"></TextCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        
+        <Button x:Name="btnProximo" Text="Próximo" Clicked="OnSelecionarProximo" VerticalOptions="EndAndExpand"></Button>
+    </StackLayout>
 </ContentPage>

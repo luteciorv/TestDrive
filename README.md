@@ -31,3 +31,9 @@ Curso Alura - Projeto em Xamarin
 > * Navegação entre páginas;
 > * Criação das páginas Detalhes e Agendamento;
 > * Adição de título na página;
+
+### (v01.08)
+> * Detalhes do veículo;
+> * Padding, TableView, Intent e Section;
+> * TextCell;
+> * Eventos no Switch ao alterar seu valor;
