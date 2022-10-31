@@ -37,3 +37,9 @@ Curso Alura - Projeto em Xamarin
 > * Padding, TableView, Intent e Section;
 > * TextCell;
 > * Eventos no Switch ao alterar seu valor;
+
+### (v01.09)
+> * Agendamento;
+> * TableView, TableSection e entrada de dados;
+> * DatePicker e TimePicker;
+> * Botão de agendamento;
