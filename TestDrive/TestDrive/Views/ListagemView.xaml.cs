@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using TestDrive.Models;
 using Xamarin.Forms;
 
 namespace TestDrive.Views
@@ -20,13 +16,7 @@ namespace TestDrive.Views
 
         private void ExibirVeiculos()
         {
-            Veiculos = new List<Veiculo>
-            {
-                new Veiculo{Nome = "Azera  V6", Preco = 60000},
-                new Veiculo{Nome = "Fiesta 2.0", Preco = 50000},
-                new Veiculo{Nome = "HB20 S", Preco = 40000}
-            };
-
+            Veiculos = new ListagemVeiculos().Veiculos;
             BindingContext = this;
         }
 
@@ -37,12 +27,5 @@ namespace TestDrive.Views
             var paginaDetalhesView = new DetalhesView(veiculoSelecionado);
             await Navigation.PushAsync(paginaDetalhesView);
         }
-    }
-
-    public class Veiculo
-    {
-        public string Nome { get; set; }
-        public decimal Preco { get; set; }
-        public string PrecoFormatado { get { return $"R$ {Preco:#,##0.00}"; } }
-    }
+    }    
 }

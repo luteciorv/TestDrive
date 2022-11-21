@@ -43,3 +43,8 @@ Curso Alura - Projeto em Xamarin
 > * TableView, TableSection e entrada de dados;
 > * DatePicker e TimePicker;
 > * Botão de agendamento;
+
+### (v01.10)
+> * Acoplamento model
+> * Criação dos Models Veiculos e ListagemVeiculos;
+> * Retirada direta da criação de veículos e listagem das Vies;
