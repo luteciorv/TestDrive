@@ -2,8 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestDrive.Views.ListagemView"
+             xmlns:vm="clr-namespace:TestDrive.ViewsModels"
              Title="Test Drive - Veículos">
-
+    <ContentPage.BindingContext>
+        <vm:ListagemViewModel></vm:ListagemViewModel>
+    </ContentPage.BindingContext>
+    
     <ListView x:Name="lvVeiculos" ItemsSource="{Binding Veiculos}" Margin="25"
         ItemTapped="OnSelecionarVeiculo">
         <ListView.ItemTemplate>
@@ -20,5 +24,4 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
 </ContentPage>

@@ -45,11 +45,16 @@ Curso Alura - Projeto em Xamarin
 > * Botão de agendamento;
 
 ### (v01.10)
-> * Acoplamento model
+> * Acoplamento model;
 > * Criação dos Models Veiculos e ListagemVeiculos;
 > * Retirada direta da criação de veículos e listagem das Views;
 
 ### (v01.11)
-> * Model de Detalhe Agendamento
+> * Model de Detalhe Agendamento;
 > * Criação do modelo Agendamento e seus propriedades;
+> * Substituição dos campos anteriores para os campos do modelo Agendamento;
+
+### (v01.12)
+> * ViewModel, ListagemViewModel e BindingContext;
+> * Criação da Pasta ViewsModels e classe ListagemViewModel;
 > * Substituição dos campos anteriores para os campos do modelo Agendamento;
