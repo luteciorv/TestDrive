@@ -8,27 +8,22 @@ namespace TestDrive.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AgendamentoView : ContentPage
     {
-        public string Nome { get; set; }
-        public string Telefone { get; set; }
-        public string Email { get; set; }
-
-        public DateTime Data { get; set; }
-        public TimeSpan Hora { get; set; }
-
+        public Agendamento Agendamento { get; set; }
 
         public AgendamentoView(Veiculo veiculo)
         {
             InitializeComponent();
 
-            Title = $"Agendamento - {veiculo.Nome}";
-            Data = DateTime.Now;            
+            Title = $"Agendamento - {veiculo.Nome}";                      
 
             BindingContext = this;
+            
+            Agendamento = new Agendamento(veiculo);
         }
 
         private void OnAgendar(object sender, EventArgs e)
-        {
-            DisplayAlert("Agendamento", $"Nome: {Nome} \nTelefone: {Telefone} \nE-mail: {Email} \n\nData: {Data} \nHora: {Hora}", "Ok");
+        {            
+            DisplayAlert($"Agendamento do veículo {Agendamento.Veiculo.Nome}", $"Nome: {Agendamento.Nome} \nTelefone: {Agendamento.Telefone} \nE-mail: {Agendamento.Email} \n\nData: {Agendamento.DataAgendamento} \nHora: {Agendamento.HoraAgendamento}", "Ok");
         }
     }
 }

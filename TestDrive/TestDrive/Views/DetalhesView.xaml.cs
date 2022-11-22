@@ -38,13 +38,11 @@ namespace TestDrive.Views
 
         private void OnSelecionarAjuste(object sender, ToggledEventArgs e)
         {
-            decimal valorTotal = VeiculoSelecionado.Preco;
+            VeiculoSelecionado.PossuiFreioABS = swtFreio.On;
+            VeiculoSelecionado.PossuiArCondicionado = swArCondicionado.On;
+            VeiculoSelecionado.PossuiMP3Player = swMP3.On;            
 
-            valorTotal += swtFreio.On ? VeiculoSelecionado.PrecoFreioABS : 0;
-            valorTotal += swArCondicionado.On ? VeiculoSelecionado.PrecoArCondicionado : 0;
-            valorTotal += swMP3.On ? VeiculoSelecionado.PrecoMP3Player : 0;
-
-            txtValorTotal.Text = $"Valor Total R$ {valorTotal:#,#00.0}";
+            txtValorTotal.Text = $"Valor Total R$ {VeiculoSelecionado.ValorTotal():#,#00.0}";
         }
 
 

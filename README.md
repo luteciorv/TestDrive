@@ -47,4 +47,9 @@ Curso Alura - Projeto em Xamarin
 ### (v01.10)
 > * Acoplamento model
 > * Criação dos Models Veiculos e ListagemVeiculos;
-> * Retirada direta da criação de veículos e listagem das Vies;
+> * Retirada direta da criação de veículos e listagem das Views;
+
+### (v01.11)
+> * Model de Detalhe Agendamento
+> * Criação do modelo Agendamento e seus propriedades;
+> * Substituição dos campos anteriores para os campos do modelo Agendamento;

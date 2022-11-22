@@ -7,16 +7,16 @@
         <TableView Intent="Form">
             <TableRoot>
                 <TableSection Title="Seus Dados">
-                    <EntryCell Label="Nome: " Keyboard="Text" Text="{Binding Nome}"></EntryCell>
-                    <EntryCell Label="Telefone: " Keyboard="Telephone" Text="{Binding Telefone}"></EntryCell>
-                    <EntryCell Label="E-mail: " Keyboard="Email" Text="{Binding Email}"></EntryCell>
+                    <EntryCell Label="Nome: " Keyboard="Text" Text="{Binding Agendamento.Nome}"></EntryCell>
+                    <EntryCell Label="Telefone: " Keyboard="Telephone" Text="{Binding Agendamento.Telefone}"></EntryCell>
+                    <EntryCell Label="E-mail: " Keyboard="Email" Text="{Binding Agendamento.Email}"></EntryCell>
                 </TableSection>
 
                 <TableSection Title="Agendamento">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
                             <Label Text="Data: " VerticalOptions="CenterAndExpand"></Label>
-                            <DatePicker VerticalOptions="CenterAndExpand" Date="{Binding Data}">
+                            <DatePicker VerticalOptions="CenterAndExpand" Date="{Binding Agendamento.DataAgendamento}">
                                 <DatePicker.Format>dd/MM/yyyy</DatePicker.Format>
                             </DatePicker>
                         </StackLayout>
@@ -25,7 +25,7 @@
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="15, 0, 0, 0">
                             <Label Text="Hora: " VerticalOptions="CenterAndExpand"></Label>
-                            <TimePicker Time="{Binding Hora}"></TimePicker>
+                            <TimePicker Time="{Binding Agendamento.Hora}"></TimePicker>
                         </StackLayout>
                     </ViewCell>
                 </TableSection>
